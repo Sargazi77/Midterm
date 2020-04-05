@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <title>P - Home </title>
+    <link rel="stylesheet" href="styles1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div Class="name">MOHAMMAD SARGAZI</div>
+                </div>
+            </div>
+
+            </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/1.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/1.png">
+
+                        </div>
+                        <div class="subtitle"><a href="codes.html"> My Codes </a>
+                            
+                        </div>
+                    </div>
+
+                </div>        
+
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/11.png">
+                        </div>
+                        <div class="subtitle"> <a href="game-list.html"> My Games </a>
+                            
+                        </div>
+                
+                    </div>
+                </div>    
+
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/3.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/9.png">
+
+                        </div>
+                        <div class="subtitle"><a href="resume.html"> Resume </a>
+                            
+                        </div>
+                    </div>
+                </div>    
+
+            
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/4.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/3.png">
+
+                        </div>
+                        <div class="subtitle"><a href="https://www.esquire.com/uk/design/g22798845/gadgets-for-men/"> New Gadgets in market </a>
+                            
+                        </div>
+                    </div>
+                </div>    
+
+            
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/Image2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/10.png">
+
+                        </div>
+                        <div class="subtitle"><a href="email.html"> Contact me </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/Image5.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/2.png">
+
+                        </div>
+                        <div class="subtitle"><a href="https://www.indeed.com/jobs?q=IT&l=Minneapolis%2C+MN"> IT jobs </a>
+                            
+                        </div>
+                    </div>
+                </div>     
+                   
+            </div>        
+
+        </div> 
+
+    </div>    
+</body>
+<script>
+    let portfolioitems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioitems.forEach(portfolioitem => {
+        portfolioitem.addEventListener('mouseover', () => {
+            portfolioitem.childNodes[1].classList.add('img-darken')
+        })
+        portfolioitem.addEventListener('mouseout', () => {
+            portfolioitem.childNodes[1].classList.remove('img-darken')
+        })
+
+    })
+</script>
+<footer>
+    <div class="footer">
+    <p> Midterm Project Spring 2020</p>
+    </div>
+</footer>
+</html>

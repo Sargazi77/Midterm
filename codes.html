@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8"/>
+    <title>Codes</title>
+    <link rel="stylesheet" href="codes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head> 
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div Class="name">MOHAMMAD SARGAZI</div>
+                </div>
+            </div>
+
+        </div>
+        
+        <h2>Languages</h2>
+        <div class="Allcol">    
+            <button type="button" class="collapsible">Python</button>
+            <div class="content">
+            <a href="data.html">Data Collection</a><br>
+            <a href="dictionary.html">Usernames Dictionary </a><br>
+            <a href="quizpy.html"> Quiz Avarage  3</a><br>
+            <a href="rainfall.html">Rainfall Sample </a><br>
+            <a href="username.html">Usernames and Name Generator </a><br>
+            </div>
+            
+            
+            <button type="button" class="collapsible">Java</button>
+            <div class="content">
+                <a href="about.html">Coming soon...</a><br>
+                <a href="about.html">Coming soon...</a><br>
+                <a href="about.html">Coming soon...</a><br>
+                <a href="about.html">Coming soon...</a><br>
+                <a href="about.html">Coming soon...</a><br>
+            </div>
+            <h2> Other Codes:</h2>
+            <button type="button" class="collapsible">HTML/CSS</button>
+            <div class="content">
+                <a href="feedback.html">Student Feedback Form </a><br>
+                <a href="iss.html">Live ISS Location</a><br>
+                <a href="roster.html">Student Club Roster </a><br>
+            </div>
+        </div>    
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+            
+      
+          
+          
+          
+          
+        </script>
+        
+
+
+
+    </div>  
+
+</body>
+<footer>
+    <div class="footer">
+    <p> Midterm Project Spring 2020</p>
+    </div>
+</footer>
+</html>

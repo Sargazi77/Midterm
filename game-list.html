@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="uft-8"/>
+    <title>Game List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">    
+<style>
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/* Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper >.left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+#demotext {
+color: #FFFFFF;
+background: #333333;
+text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+color: rgb(71, 69, 69);
+background: #ffffff;
+text-align: center
+}
+h2 {
+    font-size: 42px;
+}
+p {
+    text-decoration: none;
+    text-shadow: 0 0 3px rgb(185, 177, 63);
+    text-align: center;
+}
+#image {
+    padding-right: 30px;
+}
+.content a {
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    text-shadow: 0 0 3px #FF0000;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  text-align: left;
+  font-size: 42px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: 900;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(90, 90, 90);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div Class="name">MOHAMMAD SARGAZI</div>
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <div id="demotext"><h2>Game's List </h2></div>
+    <button class="collapsible">Snake</button>
+    <div class="content">
+        <a> <img  id= "image" src="Images/s.png" alt="Smiley face" width="100px" height="100px" align="left"> <a href="1snake.html"> Snake Game </a>
+
+    </div>
+
+    <button class="collapsible">Tennis</button>
+    <div class="content">
+        <img  id= "image" src="Images/t.png" alt="Smiley face" width="100px" height="100px" align="left"> <a href="tennis.html"> Tennis Game </a>
+    </div>    
+    <button class="collapsible">Bubble Game</button>
+    <div class="content">
+        <a> <img  id= "image" src="Images/b.png" alt="Smiley face" width="100px" height="100px" align="left"> <a href="bubblegame.html"> Bubble Game </a></div>
+</div>    
+<div id="demotext">
+    <button class="collapsible">Geography Quiz</button>
+    <div class="content">
+        <a> <img  id= "image" src="Images/g.png" alt="Smiley face" width="100px" height="100px" align="left"> <a href="index1.html"> Geography Quiz</a>
+
+    </div>    
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+</script>
+
+</body>
+<footer>
+    <div class="footer">
+    <p> Midterm Project Spring 2020</p>
+    </div>
+</footer>
+</html>
